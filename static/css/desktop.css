@@ -1,0 +1,80 @@
+/* 
+ *   FILE : desktop.css
+ *   
+ *   
+ *   Created on : Oct 21, 2018, 9:07:24 PM
+ *   Author     : noisedriver
+ */
+
+
+#header {
+    /* positioning */
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 80px;
+}
+
+#header h1 {
+    /* positioning */
+    font-size: 300%;
+    text-align: center; vertical-align: middle;
+}
+
+#navigation {
+    /* position */
+    top: 0;
+    margin-top: 80px;      /* header height */
+    position: fixed;
+    width: 100%;
+    height: 20px;
+}
+
+#navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 10% 0 10%;
+    overflow: hidden;
+    background-color: #222222;
+    width: 80%;
+}
+
+#navigation li {
+    float: left;
+}
+
+#navigation li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+#navigation li a:hover:not(.active) {
+    background-color: #ffffff;
+    color: #222222;
+}
+
+#navigation .active {
+    background-color: #ffffff;
+    color: #222222;
+}
+
+#content {
+    /* positioning */
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 130px;      /* header height */
+    margin-bottom: 60px;    /* footer height */
+}
+
+#footer {
+    /* positioning */
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 50px;
+}

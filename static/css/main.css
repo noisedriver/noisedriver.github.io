@@ -1,6 +1,17 @@
 /* 
-    Created on : Oct 21, 2018, 9:07:24 PM
-    Author     : noisedriver
+ *   FILE : main.css
+ *   
+ *   
+ *   Created on : Oct 21, 2018, 9:07:24 PM
+ *   Author     : noisedriver
+ */
+
+
+/* keep up to date...
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
 */
 
 /*******************************************************************************
@@ -21,13 +32,6 @@ body {
 }
 
 #header {
-    /* positioning */
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 80px;
-    
     /* colour */
     background-color: #222222;
     color: #ffffff;
@@ -46,13 +50,6 @@ body {
 }
 
 #navigation {
-    /* position */
-    top: 0;
-    margin-top: 80px;      /* header height */
-    position: fixed;
-    width: 100%;
-    height: 20px;
-    
     /* fonts */
     font-family: "Arial", Helvetica, sans-serif;
 }
@@ -89,12 +86,6 @@ body {
 }
 
 #content {
-    /* positioning */
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 130px;      /* header height */
-    margin-bottom: 60px;    /* footer height */
-    
     /* colour */
     background-color: #ffffff;
     color: #222222;
@@ -104,13 +95,6 @@ body {
 }
 
 #footer {
-    /* positioning */
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 50px;
-    
     /* colour */
     background-color: #222222;
     color: #ffffff;
