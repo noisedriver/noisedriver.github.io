@@ -1,33 +1,22 @@
-/* 
+/*******************************************************************************
  *   FILE : main.css
  *   
+ *   Main blocks (#header #navigation #content #footer)
  *   
  *   Created on : Oct 21, 2018, 9:07:24 PM
  *   Author     : noisedriver
- */
-
-
-/* keep up to date...
-@viewport {
-  width: device-width ;
-  zoom: 1.0 ;
-}
-*/
-
-@font-face {
-    font-family: 'destroy'; /*a name to be used later*/
-    src: url('http://noisedriver.com/static/ttf/destroy_.ttf'); /*URL to font*/
-}
-
-/*******************************************************************************
- * Main blocks (#header #navigation #content #footer)
  ******************************************************************************/
-body {
+
+html, body {
     /* positioning */
     margin: 0;
+    margin-top: 75px; /* half the height of #header + #navigation? */
+    margin-bottom: 25px;
+    padding: 0;
+    height: 100%; /* needed for container min-height */
     
     /* colours */
-    background-color: #ffffff;
+    /*background-color: #ffffff;*/
     color: #222222;
     
     /* fonts */
@@ -41,22 +30,41 @@ body {
     background-color: #222222;
     color: #ffffff;
     
-    /* test */
-    /*border: 3px solid #73AD21;*/
+    /* positioning */
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    
+    z-index: 1000;
 }
 
 #header h1 {
     /* positioning */
-    text-align: center; vertical-align: middle;
+    text-align: center;
+    vertical-align: middle;
     
     /* fonts */
     /*font-family: "Arial", Helvetica, sans-serif;*/
     font-family: 'destroy';
+    font-size: 250%;
+    text-transform: lowercase;
 }
 
 #navigation {
     /* fonts */
     font-family: "Arial", Helvetica, sans-serif;
+    
+    /* position */
+    top: 0;
+    margin-top: 100px;      /* header height */
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    
+    z-index: 1000;
 }
 
 #navigation ul {
@@ -74,10 +82,13 @@ body {
 
 #navigation li a {
     display: block;
+    
     color: #ffffff;
-    text-align: center;
-    padding: 10px 10px;
     text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    height: 20px;
+    padding: 15px 15px;
 }
 
 #navigation li a:hover:not(.active) {
@@ -90,13 +101,35 @@ body {
     color: #222222;
 }
 
+
 #content {
-    /* colour */
-    background-color: #ffffff;
     color: #222222;
-    
-    /* fonts */
     font-family: "Arial", Helvetica, sans-serif;
+    
+    /*background-image: url("http://noisedriver.com/static/img/bg.jpg");*/
+    /*background-image: url("http://localhost/noisedriver.github.io/static/img/bg.jpg");*/
+    /*background-image: url("static/img/bg.jpg");*/
+    background-image: url("../img/bg.jpg");
+    background-color: #ffffff;
+    
+    /*position: relative; /* needed for footer positioning*/
+    /*margin: 0 auto; /* center, not in IE5 */
+    /*height: auto !important; /* real browsers */
+    /*height: 100%; /* IE6: treaded as min-height*/
+    /*min-height: 100%; /* real browsers */
+    /*min-height: 100%;*/
+    
+    /* positioning */
+    margin-top: 150px;      /* header height */
+    margin-bottom: 50px;    /* footer height */
+    padding-left: 10%;
+    padding-right: 10%;
+    
+    position: relative; /* needed for footer positioning*/
+    margin: 0 auto; /* center, not in IE5 */
+    height: auto !important; /* real browsers */
+    height: 100%; /* IE6: treaded as min-height*/
+    min-height: 100%; /* real browsers */
 }
 
 #footer {
@@ -107,6 +140,12 @@ body {
     /* fonts */
     font-family: "Arial","Helvetica","sans-serif";
     
-    /* test */
-    /*border: 3px solid #73AD21;*/
+    /* positioning */
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 50px;
+    
+    z-index: 1000;
 }
