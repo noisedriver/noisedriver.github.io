@@ -76,12 +76,12 @@ body {
 
 #navigation li a:hover:not(.active) {
     background-color: #eeeeee;
-    background-color: #111111;
+    color: #111111;
 }
 
 #navigation .active {
     background-color: #eeeeee;
-    background-color: #111111;
+    color: #111111;
 }
 
 #content {
