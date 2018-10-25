@@ -1,0 +1,22 @@
+/* 
+    FILE feed.css
+    
+    Created on : 25-okt-2018, 17:11:17
+    Author     : schelfaj
+*/
+
+#feed {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.entry {
+    background-color: rgba(255,255,255,.4);
+}
+
+.entry p {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
